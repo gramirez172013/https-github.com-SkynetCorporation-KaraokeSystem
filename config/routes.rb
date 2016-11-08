@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'pages/compra'
+
+  get 'pages/comentario'
+
   devise_for :models
   get 'pages/services'
 
