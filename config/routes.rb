@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :models
   get 'pages/services'
 
   get 'pages/contact_us'
