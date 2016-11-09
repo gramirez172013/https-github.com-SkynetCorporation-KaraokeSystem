@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :foods
   resources :orders
   devise_for :models
   get 'pages/services'
