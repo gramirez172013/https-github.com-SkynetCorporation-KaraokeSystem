@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Karaoke System by Skynet" %></title>
+    <!-- inicio scaffol-->
+    <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
+    <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap-theme.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <!-- fin scaffol-->
+  
+  <%= csrf_meta_tags %>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -59,13 +67,15 @@
         <div class="col-lg-9">
           <%= bootstrap_flash %>
           
-  <div> 
-    <p class="notice"><%= notice %></p>                                           
-    <p class="alert"><%= alert %></p> 
-  </div>
-  
-          <%= yield %>
-        </div>
+          <div> 
+            <p class="notice"><%= notice %></p>                                           
+            <p class="alert"><%= alert %></p> 
+          </div>
+          
+<div class="container">
+  <%= yield %>              <!-- se cambio por el container scaffold-->
+</div>
+          </div>
         <div class="col-lg-3">
           <div class="well sidebar-nav">
             <h3>Sidebar</h3>
