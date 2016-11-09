@@ -1,12 +1,5 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   resources :orders
-=======
-  get 'pages/compra'
-
-  get 'pages/comentario'
-
->>>>>>> abb832a898cd5c3f43107ae32fb538d9854f3151
   devise_for :models
   get 'pages/services'
 
