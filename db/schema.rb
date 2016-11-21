@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161108115221) do
+ActiveRecord::Schema.define(version: 20161109213723) do
+
+  create_table "foods", force: :cascade do |t|
+    t.string   "nombre"
+    t.boolean  "miembro"
+    t.text     "sala"
+    t.text     "pedido"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "models", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

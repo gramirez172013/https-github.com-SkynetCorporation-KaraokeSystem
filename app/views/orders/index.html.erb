@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Orders</h1>
+<h1>Lista de reservas</h1>
 
 <table>
   <thead>
     <tr>
       <th>Nombre</th>
-      <th>Password</th>
+      
       <th>Correo</th>
       <th>Miembro</th>
       <th>Fecha</th>
       <th>Hora</th>
-      <th>Info</th>
+      <th>Sala</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,12 +20,13 @@
     <% @orders.each do |order| %>
       <tr>
         <td><%= order.nombre %></td>
-        <td><%= order.password %></td>
+        
         <td><%= order.correo %></td>
         <td><%= order.miembro %></td>
         <td><%= order.fecha %></td>
         <td><%= order.hora %></td>
         <td><%= order.info %></td>
+        
         <td><%= link_to 'Show', order %></td>
         <td><%= link_to 'Edit', edit_order_path(order) %></td>
         <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -36,4 +37,6 @@
 
 <br>
 
-<%= link_to 'New Order', new_order_path %>
+<%= link_to 'Nueva reserva', new_order_path %>
+<b> | </b>
+<a href="pages/reservation.html">Cancel</a>

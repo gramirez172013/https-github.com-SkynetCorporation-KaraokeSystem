@@ -1,34 +1,52 @@
+<font size=15 color="black">Dejenos su Comentario</font>
+<p aling="right"><a href="/">Inicio</a> </p>
+  <body background="/assets/FONDO_COMENTARIO.jpg" background-repeat: no-repeat aling="centre">
+    
 <html lang="es">
+  
+<script LANGUAGE="JavaScript">
+function mi_alerta () {
+    alert ("Mensaje Enviado");
+}
+</script>
+  
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="description" content="Pagina Informatica"/>
-		<title> DEJANOS TU COMENTARIO </title>
+	
 	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
 	</head>
+
 <body>
-	<header>
-	
-	<h1><figcaption><b>Dejenos su Comentario</figcaption></h1>	
-		</header>
-	<h2><figcaption>Nombre Completo:</figcaption></h2>
-	<input type="text" size="45" maxlength="60" name="nombre">
-	<h3><figcaption>Correo electrónico:</figcaption></h3>
-	<footer>
-	<input type="text" size="45" maxlength="60" name="nombre">
-	</footer>
 	<P>Por favor, introduzca sus comentarios:<BR>
       <TEXTAREA rows="5" cols="30" name="txtsugerencias"></TEXTAREA><BR>
       <INPUT type="hidden" name="identificador" value="Z87X09RF"><BR>
       </P>
+      
 	<body>
-<form method="get" action="http://aprenderaprogramar.com/accion.php">
-<input type="submit" value="Enviar" />
+<form method="pos" url="pages_comentario_path">
+<input type="submit" 
+name="enviar" 
+id="enviar"
+value="Enviar"
+onClick="mi_alerta()"/>
+
+<input type="submit"
+value="Cancelar"/>
 </form>
 </body>
-<body>
-<form method="get" action="http://aprenderaprogramar.com/accion.php">
-<input type="submit" value="Cancelar" />
-</form>
 </body>
-</body>
+
+<font size=5 color="black" aling="right">CALIFICANOS:</font>
+
+<font size=7 > <div class="ec-stars-wrapper">
+	<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+	<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+	<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+	<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+	<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+</div> 
+</font>
+<noscript>Necesitas tener habilitado javascript para poder votar</noscript>
+
 </html>
