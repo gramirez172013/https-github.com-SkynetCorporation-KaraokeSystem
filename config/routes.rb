@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :locals
   resources :foods
   resources :orders
   devise_for :models
@@ -34,6 +35,8 @@ Rails.application.routes.draw do
   get 'pages/about_us'
   
   get 'pages/comentario'
+  
+  get 'pages/admin'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
