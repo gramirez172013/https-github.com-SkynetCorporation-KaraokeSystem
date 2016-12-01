@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161109213723) do
+ActiveRecord::Schema.define(version: 20161201010956) do
+
+  create_table "eventos", force: :cascade do |t|
+    t.string   "nombre"
+    t.date     "fecha"
+    t.time     "hora"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "foods", force: :cascade do |t|
     t.string   "nombre"

@@ -108,5 +108,32 @@ function validarUsuario() {
   </a>
 </div>
   </body>
-  
+<footer>
+<!-- empieza musica demo -->
+<h1>HOLA</h1>
+
+  </audio>
+  <p>
+  <button id="play">PLAY</button>
+  <button id="pause">PAUSE</button>
+  </p>
+  <audio controls autoplay controls="controls">
+  <source src="https://drive.google.com/file/d/0BxK4oSa8nBVjNnA0eUZpdk03WkU/view?usp=sharing" type="audio/mp3" />
+  </audio>
+   
+   
+  <script>
+   
+  var myAudio = document.getElementById("audio");
+  var btnPlay = document.getElementById("play");
+  var btnPause = document.getElementById("pause");
+   
+  btnPlay.addEventListener("click", function(){myAudio.play();}, false);
+  btnPause.addEventListener("click", function(){myAudio.pause();}, false);
+   
+  </script>
+
+<!-- fin musica demo -->
+</footer>
+
 </html>
