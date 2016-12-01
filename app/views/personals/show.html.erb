@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Local de trabajo:</strong>
+  <%= @personal.local %>
+</p>
+
+<p>
+  <strong>Puesto:</strong>
+  <%= @personal.puesto %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @personal.nombre %>
+</p>
+
+<p>
+  <strong>Apellido paterno:</strong>
+  <%= @personal.apPaterno %>
+</p>
+
+<p>
+  <strong>Apellido materno:</strong>
+  <%= @personal.apMaterno %>
+</p>
+
+<p>
+  <strong>Fecha nacimiento:</strong>
+  <%= @personal.fecNa %>
+</p>
+
+<p>
+  <strong>Dni:</strong>
+  <%= @personal.dni %>
+</p>
+
+<p>
+  <strong>Celular:</strong>
+  <%= @personal.celular %>
+</p>
+
+<p>
+  <strong>Correo:</strong>
+  <%= @personal.correo %>
+</p>
+
+<%= link_to 'Editar', edit_personal_path(@personal) %> |
+<%= link_to 'Atrás', personals_path %>

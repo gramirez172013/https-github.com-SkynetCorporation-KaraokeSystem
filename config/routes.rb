@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :personals
 #<<<<<<< HEAD
   resources :locals
 
@@ -45,7 +46,7 @@ Rails.application.routes.draw do
   
 #<<<<<<< HEAD
   
-  get 'pages/admin'
+  get 'pages/administrador'
 #=======
   match "/404" => "errors#not_found", via: [ :get, :post, :patch, :delete ]
 #>>>>>>> d8076144a40766798033e95b3d662a78c76a174d

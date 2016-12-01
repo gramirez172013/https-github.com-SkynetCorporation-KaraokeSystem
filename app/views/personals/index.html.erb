@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Personal</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Local de Trabajo</th>
+      <th>Puesto</th>
+      <th>Nombre</th>
+      <th>Apellido Paterno</th>
+      <th>Apellido Materno</th>
+      <th>Fecha de nacimiento</th>
+      <th>DNI</th>
+      <th>Celular</th>
+      <th>Correo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personals.each do |personal| %>
+      <tr>
+        <td><%= personal.local %></td>
+        <td><%= personal.puesto %></td>
+        <td><%= personal.nombre %></td>
+        <td><%= personal.apPaterno %></td>
+        <td><%= personal.apMaterno %></td>
+        <td><%= personal.fecNa %></td>
+        <td><%= personal.dni %></td>
+        <td><%= personal.celular %></td>
+        <td><%= personal.correo %></td>
+        <td><%= link_to 'Mostrar', personal %></td>
+        <td><%= link_to 'Editar', edit_personal_path(personal) %></td>
+        <td><%= link_to 'Eliminar', personal, method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Personal', new_personal_path %><br>
+<a href="/pages/administrador">Volver al Menú</a>
+
