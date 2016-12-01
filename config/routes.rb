@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :locals
+=======
+  
+  resources :eventos
+  get 'errors/not_found'
+
+>>>>>>> d8076144a40766798033e95b3d662a78c76a174d
   resources :foods
   resources :orders
   devise_for :models
@@ -35,8 +42,12 @@ Rails.application.routes.draw do
   get 'pages/about_us'
   
   get 'pages/comentario'
+<<<<<<< HEAD
   
   get 'pages/admin'
+=======
+  match "/404" => "errors#not_found", via: [ :get, :post, :patch, :delete ]
+>>>>>>> d8076144a40766798033e95b3d662a78c76a174d
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,6 +1,16 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+#empieza not found
+  module NameOfMyApp
+    class Application < Rails::Application
+      # …
+  
+      require Rails.root.join("lib/custom_public_exceptions")
+      config.exceptions_app = CustomPublicExceptions.new(Rails.public_path)
+    end
+  end
+#fin not found
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
